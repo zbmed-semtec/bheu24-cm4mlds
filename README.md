@@ -22,8 +22,8 @@ Leyla Jael Castro, Nuria Queralt Rosinach
 Depending on the participants skills and time (some might be collaborating to another project), the plan bellow will be modified and fine-tuned.
 
 1. Get familiar with Croissant ML specification, examples and Python library
-2. Map sources APIs and/or data dumps to Croissant
-3. Implement the transformation from the data retrieved from the sources to Croissant ML
+2. Retrieve Croissant metadata for Hugging Face datasets
+3. Create a Knowledge Graph from the harvested metadata
 4. Analyze how many of the Croissant schema is covered
 5. Discuss what sort of corpus would be necessary to increase coverage with ML approaches
 
