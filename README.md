@@ -1,5 +1,5 @@
-# bheu24-hf-cm4ds
-BioHackathon Europe 2024 repository to explore Croissant ML metadata extraction from HuggingFace.
+# bheu24-cm4mlds
+BioHackathon Europe 2024 repository to explore Croissant ML metadata extraction from ML platforms such as HuggingFace.
 
 ## BioHackathon Proposal
 
