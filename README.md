@@ -22,7 +22,12 @@ Leyla Jael Castro, Nuria Queralt Rosinach
 Depending on the participants skills and time (some might be collaborating to another project), the plan bellow will be modified and fine-tuned.
 
 1. Get familiar with Croissant ML specification, examples and Python library
-2. Retrieve Croissant metadata for Hugging Face datasets
+2. Retrieve Croissant metadata for Hugging Face datasets & OpenML
+    -  Hugging Face embeds Croissant JSON-LD directly in the HTML of dataset pages. It also offers ways to download the Croissant JSON-LD file:
+        Via a Croissant tag button on the dataset's page (ex: https://huggingface.co/datasets/CohereForAI/aya_collection)
+        Via their API (ex: https://huggingface.co/api/datasets/CohereForAI/aya_collection/croissant)
+    - OpenML offers a Croissant button on all of their datasets to download the underlying Croissant JSON-LD file. More information can be found [here](https://docs.openml.org/).
+    
 3. Create a Knowledge Graph from the harvested metadata
 4. Analyze how many of the Croissant schema is covered
 5. Discuss what sort of corpus would be necessary to increase coverage with ML approaches
