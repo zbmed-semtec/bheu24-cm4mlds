@@ -28,14 +28,16 @@ class RDFHandler:
         result = container.exec_run(command)
         print(result)
 
-    def load_graph(self, rdf_file_path):
+    def upload_rdf_file(self, rdf_file_path, container_rdf_folder,graph_iri):
         """
         Uploads a RDF file containing a graph to a RDF database instance running in a Docker container.
 
         Args:
             rdf_file_path: Path to the RDF file on the host machine.
-            kg_files_directory: Directory where the TTL file will be located.
-            container_name: Name of the Docker container.
+            kg_files_directory: Directory where the RDF file will be located.
+            container_name: Name of the Docker container where the RDF database is running.
+            container_rdf_folder: Directory where the RDF file will be located in the container.
+            graph_iri: Identifier  of the graph to be loaded.
             _user:  username.
             _password:  password.
         """
@@ -45,9 +47,9 @@ class RDFHandler:
         shutil.move(rdf_file_path, new_rdf_file_path)
 
         sql_command = f""" exec=\"DELETE FROM DB.DBA.LOAD_LIST; 
-                                ld_dir('/opt/virtuoso-opensource/database/kg_files',
+                                ld_dir('{container_rdf_folder}',
                                 '{rdf_file_path.split('/')[-1]}',
-                                'http://example.com/data_1');
+                                '{graph_iri}');
                                 DB.DBA.rdf_loader_run();
                                 checkpoint;\""""
 
@@ -55,7 +57,7 @@ class RDFHandler:
 
         result = container.exec_run(command)
 
-    def delete_graph(self, rdf_file_path):
+    def delete_graph_from_file(self, rdf_file_path):
         """
         Deletes all triplets associated with the graph in the TTL file in the  instance running in a Docker container.
 

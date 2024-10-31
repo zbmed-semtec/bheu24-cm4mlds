@@ -14,11 +14,19 @@ def main():
         sparql_endpoint="http://localhost:8890/sparql",
     )
     
-    # new_triplets_graph = rdflib.Graph(identifier="http://example.com/data_1")
-    # new_triplets_graph.bind("schema", URIRef("https://schema.org/"))
-    rdfHandler.load_graph(rdf_file_path="./core/data/datasets_data/dataset_333_croissant_OpenML.jsonld")
+    rdfHandler.upload_rdf_file(
+                          
+                          rdf_file_path="./core/data/datasets_data/dataset_333_croissant_OpenML.jsonld",
+                          container_rdf_folder="/opt/virtuoso-opensource/database/kg_files",
+                          graph_iri="http://example.com/data_1"
+                          
+                        )
+    
     print("VIRTUOSO LOADED")
+    
     check_graph_triplets(rdfHandler)
+    
+    
     
 
 def check_graph_triplets(rdfHandler):
