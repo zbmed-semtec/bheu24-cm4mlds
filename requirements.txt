@@ -1,0 +1,7 @@
+rdflib
+numpy
+pandas
+sparqlwrapper
+jupyter 
+notebook
+docker

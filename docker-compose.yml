@@ -1,0 +1,45 @@
+version: "3.8" 
+
+services:
+
+  ### Module in charge of transforming the data to the RDA FAIR4ML schema
+  python_app:
+    container_name: app
+    build: 
+      context: .
+      dockerfile: ./Dockerfile  # Path to extractor Dockerfile
+    # Define volumes to mount extractor scripts or dependencies
+    volumes:
+      - ./core:/app/core
+      - ./huggingFace:/app/huggingFace
+      - ./openML:/app/openML
+      # Necessary to run docker commands inside other containers
+      - /var/run/docker.sock:/var/run/docker.sock 
+    dns:
+      - 1.1.1.1
+
+    # Uncomment this line to test the script
+    command: ["tail", "-f", "/dev/null"]
+    # Uncomment for production
+    #command: ["python3", "ExtractFromDataset.py"]
+
+  ### RDF database
+  virtuoso:
+    image: openlink/virtuoso-opensource-7:latest
+    hostname: virtuoso
+    container_name: virtuoso
+    ports:
+      - "1111:1111"
+      - "8890:8890"
+    environment:
+      DBA_PASSWORD: my_strong_password
+    volumes:
+      - ./core/data/virtuoso_data:/opt/virtuoso-opensource/database
+
+# networks:
+#   my-macvlan-net:
+#     external: true
+#     name: my-macvlan-net
+#   host:
+#     external: true
+

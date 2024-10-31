@@ -1,0 +1,1042 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataBiases": "cr:dataBiases",
+    "dataCollection": "cr:dataCollection",
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "personalSensitiveInformation": "cr:personalSensitiveInformation",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "The Hugging Face git repository.",
+      "contentUrl": "https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K/tree/refs%2Fconvert%2Fparquet",
+      "encodingFormat": "git+https",
+      "sha256": "https://github.com/mlcommons/croissant/issues/80"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-0_30_s_academic_v0_1",
+      "name": "parquet-files-for-config-0_30_s_academic_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "0_30_s_academic_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-0_30_s_nextqa",
+      "name": "parquet-files-for-config-0_30_s_nextqa",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "0_30_s_nextqa/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-0_30_s_perceptiontest",
+      "name": "parquet-files-for-config-0_30_s_perceptiontest",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "0_30_s_perceptiontest/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-0_30_s_youtube_v0_1",
+      "name": "parquet-files-for-config-0_30_s_youtube_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "0_30_s_youtube_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-1_2_m_academic_v0_1",
+      "name": "parquet-files-for-config-1_2_m_academic_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "1_2_m_academic_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-1_2_m_nextqa",
+      "name": "parquet-files-for-config-1_2_m_nextqa",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "1_2_m_nextqa/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-1_2_m_youtube_v0_1",
+      "name": "parquet-files-for-config-1_2_m_youtube_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "1_2_m_youtube_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-2_3_m_academic_v0_1",
+      "name": "parquet-files-for-config-2_3_m_academic_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "2_3_m_academic_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-2_3_m_nextqa",
+      "name": "parquet-files-for-config-2_3_m_nextqa",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "2_3_m_nextqa/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-2_3_m_youtube_v0_1",
+      "name": "parquet-files-for-config-2_3_m_youtube_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "2_3_m_youtube_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-30_60_s_academic_v0_1",
+      "name": "parquet-files-for-config-30_60_s_academic_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "30_60_s_academic_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-30_60_s_nextqa",
+      "name": "parquet-files-for-config-30_60_s_nextqa",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "30_60_s_nextqa/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-30_60_s_perceptiontest",
+      "name": "parquet-files-for-config-30_60_s_perceptiontest",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "30_60_s_perceptiontest/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-30_60_s_youtube_v0_1",
+      "name": "parquet-files-for-config-30_60_s_youtube_v0_1",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "30_60_s_youtube_v0_1/*/*.parquet"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "parquet-files-for-config-llava_hound",
+      "name": "parquet-files-for-config-llava_hound",
+      "description": "The underlying Parquet files as converted by Hugging Face (see: https://huggingface.co/docs/dataset-viewer/parquet).",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/x-parquet",
+      "includes": "llava_hound/*/*.parquet"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "0_30_s_academic_v0_1",
+      "name": "0_30_s_academic_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '0_30_s_academic_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_academic_v0_1/id",
+          "name": "0_30_s_academic_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_academic_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_academic_v0_1/data_source",
+          "name": "0_30_s_academic_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_academic_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_academic_v0_1/video",
+          "name": "0_30_s_academic_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_academic_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "0_30_s_nextqa",
+      "name": "0_30_s_nextqa",
+      "description": "lmms-lab/LLaVA-Video-178K - '0_30_s_nextqa' subset\n\nAdditional information:\n- 2 splits: open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_nextqa/id",
+          "name": "0_30_s_nextqa/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_nextqa"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_nextqa/data_source",
+          "name": "0_30_s_nextqa/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_nextqa"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_nextqa/video",
+          "name": "0_30_s_nextqa/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_nextqa"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "0_30_s_perceptiontest",
+      "name": "0_30_s_perceptiontest",
+      "description": "lmms-lab/LLaVA-Video-178K - '0_30_s_perceptiontest' subset\n\nAdditional information:\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_perceptiontest/id",
+          "name": "0_30_s_perceptiontest/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_perceptiontest"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_perceptiontest/data_source",
+          "name": "0_30_s_perceptiontest/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_perceptiontest"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_perceptiontest/video",
+          "name": "0_30_s_perceptiontest/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_perceptiontest"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "0_30_s_youtube_v0_1",
+      "name": "0_30_s_youtube_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '0_30_s_youtube_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_youtube_v0_1/id",
+          "name": "0_30_s_youtube_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_youtube_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_youtube_v0_1/data_source",
+          "name": "0_30_s_youtube_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_youtube_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "0_30_s_youtube_v0_1/video",
+          "name": "0_30_s_youtube_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-0_30_s_youtube_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "1_2_m_academic_v0_1",
+      "name": "1_2_m_academic_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '1_2_m_academic_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_academic_v0_1/id",
+          "name": "1_2_m_academic_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_academic_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_academic_v0_1/data_source",
+          "name": "1_2_m_academic_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_academic_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_academic_v0_1/video",
+          "name": "1_2_m_academic_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_academic_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "1_2_m_nextqa",
+      "name": "1_2_m_nextqa",
+      "description": "lmms-lab/LLaVA-Video-178K - '1_2_m_nextqa' subset\n\nAdditional information:\n- 2 splits: open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_nextqa/id",
+          "name": "1_2_m_nextqa/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_nextqa"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_nextqa/data_source",
+          "name": "1_2_m_nextqa/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_nextqa"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_nextqa/video",
+          "name": "1_2_m_nextqa/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_nextqa"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "1_2_m_youtube_v0_1",
+      "name": "1_2_m_youtube_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '1_2_m_youtube_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_youtube_v0_1/id",
+          "name": "1_2_m_youtube_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_youtube_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_youtube_v0_1/data_source",
+          "name": "1_2_m_youtube_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_youtube_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "1_2_m_youtube_v0_1/video",
+          "name": "1_2_m_youtube_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-1_2_m_youtube_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "2_3_m_academic_v0_1",
+      "name": "2_3_m_academic_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '2_3_m_academic_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_academic_v0_1/id",
+          "name": "2_3_m_academic_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_academic_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_academic_v0_1/data_source",
+          "name": "2_3_m_academic_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_academic_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_academic_v0_1/video",
+          "name": "2_3_m_academic_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_academic_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "2_3_m_nextqa",
+      "name": "2_3_m_nextqa",
+      "description": "lmms-lab/LLaVA-Video-178K - '2_3_m_nextqa' subset\n\nAdditional information:\n- 2 splits: open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_nextqa/id",
+          "name": "2_3_m_nextqa/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_nextqa"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_nextqa/data_source",
+          "name": "2_3_m_nextqa/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_nextqa"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_nextqa/video",
+          "name": "2_3_m_nextqa/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_nextqa"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "2_3_m_youtube_v0_1",
+      "name": "2_3_m_youtube_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '2_3_m_youtube_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_youtube_v0_1/id",
+          "name": "2_3_m_youtube_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_youtube_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_youtube_v0_1/data_source",
+          "name": "2_3_m_youtube_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_youtube_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "2_3_m_youtube_v0_1/video",
+          "name": "2_3_m_youtube_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-2_3_m_youtube_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "30_60_s_academic_v0_1",
+      "name": "30_60_s_academic_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '30_60_s_academic_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_academic_v0_1/id",
+          "name": "30_60_s_academic_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_academic_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_academic_v0_1/data_source",
+          "name": "30_60_s_academic_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_academic_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_academic_v0_1/video",
+          "name": "30_60_s_academic_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_academic_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "30_60_s_nextqa",
+      "name": "30_60_s_nextqa",
+      "description": "lmms-lab/LLaVA-Video-178K - '30_60_s_nextqa' subset\n\nAdditional information:\n- 2 splits: open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_nextqa/id",
+          "name": "30_60_s_nextqa/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_nextqa"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_nextqa/data_source",
+          "name": "30_60_s_nextqa/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_nextqa"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_nextqa/video",
+          "name": "30_60_s_nextqa/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_nextqa"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "30_60_s_perceptiontest",
+      "name": "30_60_s_perceptiontest",
+      "description": "lmms-lab/LLaVA-Video-178K - '30_60_s_perceptiontest' subset\n\nAdditional information:\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_perceptiontest/id",
+          "name": "30_60_s_perceptiontest/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_perceptiontest"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_perceptiontest/data_source",
+          "name": "30_60_s_perceptiontest/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_perceptiontest"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_perceptiontest/video",
+          "name": "30_60_s_perceptiontest/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_perceptiontest"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "30_60_s_youtube_v0_1",
+      "name": "30_60_s_youtube_v0_1",
+      "description": "lmms-lab/LLaVA-Video-178K - '30_60_s_youtube_v0_1' subset\n\nAdditional information:\n- 3 splits: caption, open_ended, multi_choice\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_youtube_v0_1/id",
+          "name": "30_60_s_youtube_v0_1/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_youtube_v0_1"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_youtube_v0_1/data_source",
+          "name": "30_60_s_youtube_v0_1/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_youtube_v0_1"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "30_60_s_youtube_v0_1/video",
+          "name": "30_60_s_youtube_v0_1/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-30_60_s_youtube_v0_1"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "llava_hound",
+      "name": "llava_hound",
+      "description": "lmms-lab/LLaVA-Video-178K - 'llava_hound' subset\n\nAdditional information:\n- 1 skipped column: conversations",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "llava_hound/id",
+          "name": "llava_hound/id",
+          "description": "Column 'id' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-llava_hound"
+            },
+            "extract": {
+              "column": "id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "llava_hound/data_source",
+          "name": "llava_hound/data_source",
+          "description": "Column 'data_source' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-llava_hound"
+            },
+            "extract": {
+              "column": "data_source"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "llava_hound/video",
+          "name": "llava_hound/video",
+          "description": "Column 'video' from the Hugging Face parquet file.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {
+              "@id": "parquet-files-for-config-llava_hound"
+            },
+            "extract": {
+              "column": "video"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "LLaVA-Video-178K",
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tDataset Card for LLaVA-Video-178K\n\t\n\n\n\t\n\t\t\n\t\n\t\n\t\tUses\n\t\n\nThis dataset is used for the training of the LLaVA-Video model. We only allow the use of this dataset for academic research and education purpose. For OpenAI GPT-4 generated data, we recommend the users to check the OpenAI Usage Policy.\n\n\t\n\t\t\n\t\n\t\n\t\tData Sources\n\t\n\nFor the training of LLaVA-Video, we utilized video-language data from five primary sources:\n\nLLaVA-Video-178K: This dataset includes 178,510 caption entries, 960… See the full description on the dataset page: https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K.",
+  "alternateName": [
+    "lmms-lab/LLaVA-Video-178K"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "LMMs-Lab",
+    "url": "https://huggingface.co/lmms-lab"
+  },
+  "keywords": [
+    "visual-question-answering",
+    "video-text-to-text",
+    "English",
+    "1M - 10M",
+    "Text",
+    "Video",
+    "arxiv:2410.02713",
+    "🇺🇸 Region: US",
+    "video"
+  ],
+  "url": "https://huggingface.co/datasets/lmms-lab/LLaVA-Video-178K"
+}
