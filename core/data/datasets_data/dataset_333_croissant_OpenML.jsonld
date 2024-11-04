@@ -1,0 +1,210 @@
+{
+    "@context": {
+        "@language": "en",
+        "@vocab": "https://schema.org/",
+        "citeAs": "cr:citeAs",
+        "column": "cr:column",
+        "conformsTo": "dct:conformsTo",
+        "cr": "http://mlcommons.org/croissant/",
+        "rai": "http://mlcommons.org/croissant/RAI/",
+        "data": {
+            "@id": "cr:data",
+            "@type": "@json"
+        },
+        "dataType": {
+            "@id": "cr:dataType",
+            "@type": "@vocab"
+        },
+        "dct": "http://purl.org/dc/terms/",
+        "examples": {
+            "@id": "cr:examples",
+            "@type": "@json"
+        },
+        "extract": "cr:extract",
+        "field": "cr:field",
+        "fileProperty": "cr:fileProperty",
+        "fileObject": "cr:fileObject",
+        "fileSet": "cr:fileSet",
+        "format": "cr:format",
+        "includes": "cr:includes",
+        "isLiveDataset": "cr:isLiveDataset",
+        "jsonPath": "cr:jsonPath",
+        "key": "cr:key",
+        "md5": "cr:md5",
+        "parentField": "cr:parentField",
+        "path": "cr:path",
+        "recordSet": "cr:recordSet",
+        "references": "cr:references",
+        "regex": "cr:regex",
+        "repeated": "cr:repeated",
+        "replace": "cr:replace",
+        "sc": "https://schema.org/",
+        "separator": "cr:separator",
+        "source": "cr:source",
+        "subField": "cr:subField",
+        "transform": "cr:transform"
+    },
+    "@type": "sc:Dataset",
+    "conformsTo": "http://mlcommons.org/croissant/1.0",
+    "dateCreated": "2015-05-21T22:49:48",
+    "description": "**Author**: Prof. I-Cheng Yeh  \n**Source**: [UCI](https://archive.ics.uci.edu/ml/datasets/Blood+Transfusion+Service+Center)  \n**Please cite**: Yeh, I-Cheng, Yang, King-Jang, and Ting, Tao-Ming, \"Knowledge discovery on RFM model using Bernoulli sequence\", Expert Systems with Applications, 2008.   \n\n**Blood Transfusion Service Center Data Set**  \nData taken from the Blood Transfusion Service Center in Hsin-Chu City in Taiwan -- this is a classification problem.\n\nTo demonstrate the RFMTC marketing model (a modified version of RFM), this study adopted the donor database of Blood Transfusion Service Center in Hsin-Chu City in Taiwan. The center passes their blood transfusion service bus to one university in Hsin-Chu City to gather blood donated about every three months. To build an FRMTC model, we selected 748 donors at random from the donor database. \n\n### Attribute Information  \n* V1: Recency - months since last donation\n* V2: Frequency - total number of donation\n* V3: Monetary - total blood donated in c.c.\n* V4: Time - months since first donation), and a binary variable representing whether he/she donated blood in March 2007 (1 stand for donating blood; 0 stands for not donating blood).\n\nThe target attribute is a binary variable representing whether he/she donated blood in March 2007 (2 stands for donating blood; 1 stands for not donating blood).",
+    "isAccessibleForFree": true,
+    "keywords": [
+        "Chemistry",
+        "Life Science",
+        "OpenML-CC18",
+        "OpenML100",
+        "study_123",
+        "study_135",
+        "study_14",
+        "study_218",
+        "study_34",
+        "study_50",
+        "study_52",
+        "study_7",
+        "study_98",
+        "study_99",
+        "uci"
+    ],
+    "license": "Public",
+    "name": "blood-transfusion-service-center",
+    "sameAs": "https://archive.ics.uci.edu/ml/datasets/Blood+Transfusion+Service+Center",
+    "url": "https://www.openml.org/search?type=data&id=1464",
+    "version": 1,
+    "distribution": [
+        {
+            "@type": "cr:FileObject",
+            "@id": "data-file",
+            "name": "data-file",
+            "description": "Data file belonging to the dataset.",
+            "contentUrl": "https://api.openml.org/data/v1/download/1586225/blood-transfusion-service-center.arff",
+            "encodingFormat": "text/plain",
+            "md5": "c3242468edab8c2e7a907674122dc851"
+        }
+    ],
+    "recordSet": [
+        {
+            "@type": "cr:RecordSet",
+            "@id": "enumerations/Class",
+            "name": "Class",
+            "description": "Possible values for Class",
+            "dataType": "sc:Enumeration",
+            "field": [
+                {
+                    "@type": "cr:Field",
+                    "@id": "enumerations/Class/value",
+                    "name": "value",
+                    "description": "The value of Class.",
+                    "dataType": "sc:Text"
+                }
+            ],
+            "data": [
+                {
+                    "value": "1"
+                },
+                {
+                    "value": "2"
+                }
+            ]
+        },
+        {
+            "@type": "cr:RecordSet",
+            "name": "data-file-description",
+            "description": "Listing the fields of the data.",
+            "field": [
+                {
+                    "@type": "cr:Field",
+                    "@id": "features/0-V1",
+                    "name": "V1",
+                    "description": "V1 - a field.",
+                    "dataType": [
+                        "sc:Float",
+                        "sc:Integer"
+                    ],
+                    "source": {
+                        "fileObject": {
+                            "@id": "data-file"
+                        },
+                        "extract": {
+                            "column": "V1"
+                        }
+                    }
+                },
+                {
+                    "@type": "cr:Field",
+                    "@id": "features/1-V2",
+                    "name": "V2",
+                    "description": "V2 - a field.",
+                    "dataType": [
+                        "sc:Float",
+                        "sc:Integer"
+                    ],
+                    "source": {
+                        "fileObject": {
+                            "@id": "data-file"
+                        },
+                        "extract": {
+                            "column": "V2"
+                        }
+                    }
+                },
+                {
+                    "@type": "cr:Field",
+                    "@id": "features/2-V3",
+                    "name": "V3",
+                    "description": "V3 - a field.",
+                    "dataType": [
+                        "sc:Float",
+                        "sc:Integer"
+                    ],
+                    "source": {
+                        "fileObject": {
+                            "@id": "data-file"
+                        },
+                        "extract": {
+                            "column": "V3"
+                        }
+                    }
+                },
+                {
+                    "@type": "cr:Field",
+                    "@id": "features/3-V4",
+                    "name": "V4",
+                    "description": "V4 - a field.",
+                    "dataType": [
+                        "sc:Float",
+                        "sc:Integer"
+                    ],
+                    "source": {
+                        "fileObject": {
+                            "@id": "data-file"
+                        },
+                        "extract": {
+                            "column": "V4"
+                        }
+                    }
+                },
+                {
+                    "@type": "cr:Field",
+                    "@id": "features/4-Class",
+                    "name": "Class",
+                    "description": "Class - the default target field.",
+                    "dataType": "sc:Text",
+                    "references": {
+                        "field": {
+                            "@id": "enumerations/Class/value"
+                        }
+                    },
+                    "source": {
+                        "fileObject": {
+                            "@id": "data-file"
+                        },
+                        "extract": {
+                            "column": "Class"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
