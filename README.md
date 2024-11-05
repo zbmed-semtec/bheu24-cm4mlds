@@ -44,10 +44,17 @@ After cloning the repository, run the following commands in the root directory o
     ```
     docker-compose build
     ```
+    
     To start the docker containers, run the following command:
     ```
     docker-compose up -d
     ```
+
+    To just run the example run the following command:
+    ```
+    docker exec -it app core/main.py
+    ```
+
     To enter the container with the python app that interacts with Virtuoso database, run the following command:
     ```
     docker exec -it app /bin/bash

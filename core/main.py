@@ -8,11 +8,6 @@ from RDFHandlerLocal import RDFHandler as RDFHandlerLocal
 
 def main():
     test_docker_virtuoso()
-    #This version is used for the local install of virtuoso
-    # test_local_virtuoso()
-    
-
-
     
 def test_docker_virtuoso():
     rdfHandler = RDFHandlerDocker(
@@ -36,8 +31,9 @@ def test_docker_virtuoso():
     print("VIRTUOSO LOADED")
     
     endpoint = "http://virtuoso:8890/sparql"
+    graph_iri = "http://example.com/data_1"
     
-    check_graph_triplets(rdfHandler,endpoint)
+    check_graph_triplets(rdfHandler,endpoint,graph_iri)
 
 def test_local_virtuoso():
     rdfHandler = RDFHandlerLocal(
