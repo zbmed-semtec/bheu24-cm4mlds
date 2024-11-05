@@ -21,6 +21,8 @@ Leyla Jael Castro, Nuria Queralt Rosinach
 
 Depending on the participants skills and time (some might be collaborating to another project), the plan bellow will be modified and fine-tuned.
 
+We also have a [document for notes and additional information](https://docs.google.com/document/d/1arwiX3ana9WLk4vPcHeK1ksCDaznxHUB8KTdz_d7fYg).
+
 1. Get familiar with Croissant ML specification, examples and Python library
 2. Retrieve Croissant metadata for Hugging Face datasets & OpenML
     -  Hugging Face embeds Croissant JSON-LD directly in the HTML of dataset pages. It also offers ways to download the Croissant JSON-LD file:
@@ -87,5 +89,6 @@ To use the local setup, you need to have Python 3.10, pip and the virtuoso datab
 - Dhwani Solanki
 - Rohitha Ravinder
 - Nelson Quiñones
+- You?
 
 
