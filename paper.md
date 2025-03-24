@@ -205,7 +205,7 @@ Then we selected 10 sample entries for HuggingFace. We automated the harvesting 
 ## Semantic annotation to ontologies
 
 Semantic annotation can be extremely useful for management and integration of datasets for analysis such as ML. 
-For example, the EDAM ontology [https://doi.org/10.7490/f1000research.1118900.1] and its extension EDAM Bioimaging [https://doi.org/10.7490/f1000research.1117826.1] are used to describe tools, databases, and analytical workflows across life sciences and beyond. 
+For example, the EDAM ontology [@black_edam_2022] and its extension EDAM Bioimaging [@kalas_edam-bioimaging_2020] are used to describe tools, databases, and analytical workflows across life sciences and beyond. 
 For additional ontologies, one can check the amount of vocabularies and ontologies in repositories such as NCBO BioPortal (https://bioportal.bioontology.org/), 
 EBI Ontology Lookup Service (https://www.ebi.ac.uk/ols4), or the OBO Foundry (https://obofoundry.org/), to realise how much the life sciences community has spent during the last decades on semantic description and organisation of knowledge. 
 When analysing the tags and column names in the Hugging Face specification, we identified the potential for richer semantic annotation through integration with the EDAM ontology. 
