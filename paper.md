@@ -193,6 +193,7 @@ Table 1 reports the FAIR assessment results:
 
 
 Table 1. FAIR-Checker assessments
+
 | Dataset  | Global FAIR score | Machine-readable assessment details  |
 | --- | ----| --- |
 | (MD) [documentation-images](https://huggingface.co/datasets/huggingface/documentation-images)  | 37.5 %  | [assessment 672b2b3346764a8e5f967cfa](https://fair-checker.france-bioinformatique.fr/assessment/672b2b3346764a8e5f967cfa) |
@@ -249,6 +250,7 @@ This query with post-processing is available at  https://github.com/dwijnbergen/
 Tables with results are available in the same repository.
 
 Table 2. Number of datasets that have one or more instances of a property
+
 | Property URI                                    | Number of datasets |
 | ----------------------------------------------- | ------------------ |
 | http://www.w3.org/1999/02/22-rdf-syntax-ns#type | 21554              |
