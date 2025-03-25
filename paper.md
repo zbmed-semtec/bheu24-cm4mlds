@@ -115,7 +115,7 @@ Here, we describe the proof-of-concept developed during the BioHackathon with pr
 
 ## croissant-rdf PyPI package
 
-[croissant-rdf](https://pypi.org/project/croissant-rdf/) is a Python tool that fetches croissant metadata from datasets and exposes it in RDF format for integration with Semantic Web technologies. 
+Originally developed at DBCLS BioHackathon 2024 [@steinberg_bridging_2024], [croissant-rdf](https://pypi.org/project/croissant-rdf/) is a Python tool that fetches croissant metadata from datasets and exposes it in RDF format for integration with Semantic Web technologies. 
 It retrieves datasets from either Hugging Face or Kaggle based on user selection, extracting Croissant metadata for each dataset using the respective APIs. 
 The tool then processes the metadata and converts it into a Turtle (.ttl) RDF file using the [RDFLib](https://github.com/RDFLib/rdflib) library. 
 This involves chunking the data, converting it into JSON-LD dormant and serializing it as RDF triples. 
@@ -136,7 +136,7 @@ Updates include the addition of a progress bar using [tqdm package](https://pypi
 Contributions to the `SPARQL_demo.txt` file involved providing a brief introduction to SPARQL to assist new users.
 
 In addition, we developed a Common Workflow Language (CWL) tool for converting Croissant ML format datasets into RDF, streamlining the process of generating machine-readable metadata. 
-This tool was added to Dockstore [@10.1093/nar/gkab346], enabling researchers to seamlessly integrate RDF generation into their workflows. 
+This tool was added to Dockstore [@yuen_dockstore_2021], enabling researchers to seamlessly integrate RDF generation into their workflows. 
 By leveraging Dockstore’s FAIR principles, the tool ensures reproducibility and accessibility, fostering greater interoperability and re-usability of machine learning datasets in bioinformatics. 
 Available at [Dockstore CWL workflow](https://dockstore.org/containers/github.com/david4096/croissant-rdf/huggingface-rdf:main?tab=info).
 
