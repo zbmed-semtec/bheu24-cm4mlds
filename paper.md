@@ -115,7 +115,7 @@ Here, we describe the proof-of-concept developed during the BioHackathon with pr
 
 ## croissant-rdf PyPI package
 
-Originally developed at DBCLS BioHackathon 2024[@steinberg_bridging_2024], [croissant-rdf](https://pypi.org/project/croissant-rdf/) is a Python tool that fetches croissant metadata from datasets and exposes it in RDF format for integration with Semantic Web technologies. 
+Originally developed at DBCLS BioHackathon 2024 [@steinberg_bridging_2024], [croissant-rdf](https://pypi.org/project/croissant-rdf/) is a Python tool that fetches croissant metadata from datasets and exposes it in RDF format for integration with Semantic Web technologies. 
 It retrieves datasets from either Hugging Face or Kaggle based on user selection, extracting Croissant metadata for each dataset using the respective APIs. 
 The tool then processes the metadata and converts it into a Turtle (.ttl) RDF file using the [RDFLib](https://github.com/RDFLib/rdflib) library. 
 This involves chunking the data, converting it into JSON-LD dormant and serializing it as RDF triples. 
