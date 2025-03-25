@@ -136,7 +136,7 @@ Updates include the addition of a progress bar using [tqdm package](https://pypi
 Contributions to the `SPARQL_demo.txt` file involved providing a brief introduction to SPARQL to assist new users.
 
 In addition, we developed a Common Workflow Language (CWL) tool for converting Croissant ML format datasets into RDF, streamlining the process of generating machine-readable metadata. 
-This tool was added to Dockstore [@10.1093/nar/gkab346], enabling researchers to seamlessly integrate RDF generation into their workflows. 
+This tool was added to Dockstore [@yuen_dockstore:_2021], enabling researchers to seamlessly integrate RDF generation into their workflows. 
 By leveraging Dockstore’s FAIR principles, the tool ensures reproducibility and accessibility, fostering greater interoperability and re-usability of machine learning datasets in bioinformatics. 
 Available at [Dockstore CWL workflow](https://dockstore.org/containers/github.com/david4096/croissant-rdf/huggingface-rdf:main?tab=info).
 
