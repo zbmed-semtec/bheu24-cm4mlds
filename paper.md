@@ -6,6 +6,9 @@ tags:
   - Datasets
   - Metadata
 authors:
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+    affiliation: 9
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
     affiliation: 1
@@ -60,6 +63,8 @@ affiliations:
     index: 7
   - name: Senckenberg Society for Nature Research
     index: 8
+  - name: Swiss Institute of Bioinformatics Geneva
+    index: 9
     ror: 00xmqmx64  
 date: 19 March 2025
 cito-bibliography: paper.bib
