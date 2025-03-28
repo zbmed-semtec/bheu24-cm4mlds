@@ -8,64 +8,64 @@ tags:
 authors:
   - name: Jerven Bolleman
     orcid: 0000-0002-7449-1266
-    affiliation: 9
+    affiliation: 1
   - name: Leyla Jael Castro
     orcid: 0000-0003-3986-0510
-    affiliation: 1
-  - name: Alban Gaignard
     affiliation: 2
+  - name: Alban Gaignard
+    affiliation: 3
     orcid: 0000-0002-3597-8557
   - name: Agoritsa Kalampaliki
-    affiliation: 3
+    affiliation: 4
     orcid: 0009-0005-9948-2242
   - name: Matúš Kalaš
-    affiliation: 4
+    affiliation: 5
     orcid: 0000-0002-1509-4981
   - name: Edwin Jun Kiat Ong
     orcid: 0009-0009-8910-444X
-    affiliation: 5
-  - name: Núria Queralt-Rosinach
     affiliation: 6
+  - name: Núria Queralt-Rosinach
+    affiliation: 7
     orcid: 0000-0003-0169-8159
   - name: Nelson Quiñones
-    affiliation: 1
+    affiliation: 2
     orcid: 0000-0002-5037-0443
   - name: Rohitha Ravinder
-    affiliation: 1
+    affiliation: 2
     orcid: 0009-0004-4484-6283
   - name: Dhwani Solanki
-    affiliation: 1
+    affiliation: 2
     orcid: 0009-0004-1529-0095
   - name: David Steinberg
-    affiliation: 7
+    affiliation: 8
     orcid: 0000-0001-6683-2270
   - name: Claus Weiland
-    affiliation: 8
+    affiliation: 9
     orcid: 0009-0004-4484-6283
   - name: Daphne Wijnbergen
-    affiliation: 6
+    affiliation: 7
     orcid: 0000-0002-7449-6657   
 affiliations:
-  - name: ZB MED Information Centre for Life Sciences, Cologne, Germany
+  - name: Swiss Institute of Bioinformatics Geneva
     index: 1
+    ror: 00xmqmx64  
+  - name: ZB MED Information Centre for Life Sciences, Cologne, Germany
+    index: 2
     ror: 0259fwx54
   - name: Nantes Université, CNRS, INSERM, l’institut du thorax, F-44000 Nantes, France
-    index: 2
-  - name: Biomedical Sciences Research Center “Alexander Fleming”, Vari, Greece
     index: 3
-  - name: University of Bergen, Norway, and ELIXIR Norway
+  - name: Biomedical Sciences Research Center “Alexander Fleming”, Vari, Greece
     index: 4
-  - name: Queen’s University of Belfast
+  - name: University of Bergen, Norway, and ELIXIR Norway
     index: 5
-  - name: Leiden University Medical Center
+  - name: Queen’s University of Belfast
     index: 6
-  - name: University of California, Santa Cruz
+  - name: Leiden University Medical Center
     index: 7
-  - name: Senckenberg Society for Nature Research
+  - name: University of California, Santa Cruz
     index: 8
-  - name: Swiss Institute of Bioinformatics Geneva
+  - name: Senckenberg Society for Nature Research
     index: 9
-    ror: 00xmqmx64  
 date: 19 March 2025
 cito-bibliography: paper.bib
 event: BioHackathon Europe 2024
